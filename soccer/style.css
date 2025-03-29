@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+  }
+  
+  #saha {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin: 20px auto;
+    background: #006400; 
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+  
+  #saha::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+  }
+  #saha::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+  
+
+  .oyuncu {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .oyuncu.gk {
+    left: calc(50% - 40px);
+    top: calc(85% - 40px);
+  }
+  
+  .oyuncu.df-0 {
+    left: calc(20% - 40px);
+    top: calc(65% - 40px);
+  }
+  .oyuncu.df-1 {
+    left: calc(40% - 40px);
+    top: calc(65% - 40px);
+  }
+  .oyuncu.df-2 {
+    left: calc(60% - 40px);
+    top: calc(65% - 40px);
+  }
+  .oyuncu.df-3 {
+    left: calc(80% - 40px);
+    top: calc(65% - 40px);
+  }
+
+  .oyuncu.mf-0 {
+    left: calc(20% - 40px);
+    top: calc(45% - 40px);
+  }
+  .oyuncu.mf-1 {
+    left: calc(40% - 40px);
+    top: calc(45% - 40px);
+  }
+  .oyuncu.mf-2 {
+    left: calc(60% - 40px);
+    top: calc(45% - 40px);
+  }
+  .oyuncu.mf-3 {
+    left: calc(80% - 40px);
+    top: calc(45% - 40px);
+  }
+
+  .oyuncu.fw-0 {
+    left: calc(35% - 40px);
+    top: calc(25% - 40px);
+  }
+  .oyuncu.fw-1 {
+    left: calc(65% - 40px);
+    top: calc(25% - 40px);
+  }
+  
+  .oyuncu button {
+    margin-top: 4px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
